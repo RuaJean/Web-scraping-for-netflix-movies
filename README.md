@@ -29,31 +29,6 @@ Here is an overview of how the application works:
 ![Application Diagram](diagram.svg)
 
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/movie-review-scraper.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd movie-review-scraper
-    ```
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
-
-Run the main scraping script using Python:
-
-```bash
-python scraper.py
-```
-
-This will start scraping movie data and reviews from the FilmAffinity Netflix category. The script will continue iterating through the pages until all movies and reviews have been scraped.
-
 ### Output
 
 The output will be stored in a CSV file named `peliculas_y_criticas.csv`. The file contains the following columns:
@@ -74,19 +49,5 @@ You can modify the `user_agents` list in the script to add different User-Agent 
 
 - The script includes a retry mechanism that attempts up to 5 retries when failing to retrieve movie pages.
 - For review pages, it retries up to 3 times in case the review section is not found or the page does not load properly.
-
-## Dependencies
-
-- `requests`: For sending HTTP requests to the FilmAffinity website.
-- `BeautifulSoup` (from `bs4`): For parsing and navigating the HTML structure.
-- `csv`: For writing the extracted data into a CSV file.
-
-## Contributing
-
-If you'd like to contribute to this project, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
