@@ -28,7 +28,6 @@ Here is an overview of how the application works:
 
 ![Application Diagram](diagram.svg)
 
-> _Note: Ensure that you include `diagram.png` in the project repository to display the image correctly._
 
 ## Installation
 
